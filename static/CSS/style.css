@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Use a readable font */
+}
+
+/* Improve background color for better readability */
+.bg-dark {
+    background-color: #1E1E1E;
+    color: #fff; /* Set text color to white for better contrast */
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px; /* Limit maximum width of the content for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.card {
+    border: 1px solid #ddd; /* Add a subtle border to cards */
+    border-radius: 10px; /* Round the corners of cards */
+    box-shadow: 0 4px 8px rgba(241, 18, 18, 0.1); /* Add a slight box shadow for elevation */
+}
+
+.card-header {
+    background-color: #343a40; /* Dark color for card headers */
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 10px; /* Adjust border radius for the top-left corner */
+    border-top-right-radius: 10px; /* Adjust border radius for the top-right corner */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h1 {
+    color: #007BFF; /* Use a blue color for headings */
+}
+h5{
+    color:black;
+}
+
+/* Style form elements for better alignment and spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #163816;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Style the predict button */
+.btn-primary {
+    background-color:  transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the prediction result */
+#prediction {
+    color: #28A745; /* Use a green color for the prediction result */
+}
+
+/* Add styling for the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PriceTheCar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/stylec.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Price The Car  <ion-icon name="car-sport-sharp"></ion-icon></h2>
+    <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#t&c">T&C</a>
+        <a href="#ContactUs">Contatct</a>
+        <button class="btnlogin-popup">Login/Signup</button>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" id="loginEmail" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" id="loginPassword" required>
+                <label>Password</label>
+            </div>
+            
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="button" class="btn" onclick="login()">Login</button>
+
+            <div class="login-register">
+                <p>Don't have an acccount?<a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" id="registerUsername" required>
+                <label>Username</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" id="registerEmail" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" id="registerPassword" required>
+                <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>I agree to terms & conditions</label>
+            </div>
+
+            <button type="button" class="btn" onclick="register()">Register</button>
+
+            <div class="login-register">
+                <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+<div id="home"  class="texty ">
+<h2>Welcome to Price The Car!</h2>
+    <p>
+        Price The Car is your one-stop solution for all your car-related needs. Explore our services below:
+    </p>
+
+    <h3>Predict the Price of Your Used Car</h3>
+    <p>
+        Use our advanced prediction tools to estimate the value of your used car based on various factors.
+    </p>
+
+    <h3>List a Car for Selling</h3>
+    <p>
+        Looking to sell your car? Easily list your car on our platform and connect with potential buyers.
+    </p>
+
+    <h3>See Cars for Purchasing</h3>
+    <p>
+        Browse through a wide selection of cars available for purchase. Find the perfect car that meets your requirements.
+    </p>
+</div>
+
+
+
+<div id="services" class="texty ">
+    <h2>Services</h2>
+    <span id="predictprice" onclick="openPredictPrice() "class="blurr">Predict price of car</span>
+    <span id="listCar" onclick="openListCarPage() "class="blurr">List a Car for Selling</span>
+    <span id="seeCars" onclick="openSeeCarsPage() "class="blurr">See Cars for Purchasing</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="t&c" class="texty">
+    <h2>Terms & Conditions</h2>
+
+    <ol>
+        <li>
+            <strong>Accuracy of Predictions:</strong> Price The Car provides car price predictions based on various factors. While we strive for accuracy, we do not guarantee that the predicted amount will be exact. Predictions are estimates and may not reflect the actual market value.
+        </li>
+
+        <li>
+            <strong>Data Accuracy:</strong> The accuracy of predictions relies on the accuracy of the data provided. Users are responsible for ensuring that the information entered, including vehicle details and conditions, is accurate and up-to-date.
+        </li>
+
+        <li>
+            <strong>Market Fluctuations:</strong> Car prices can be influenced by market fluctuations and other external factors. Price The Car does not take responsibility for changes in market conditions that may affect the accuracy of predictions.
+        </li>
+
+        <li>
+            <strong>No Warranty or Guarantee:</strong> Price The Car makes no warranties or guarantees, express or implied, regarding the accuracy, completeness, or reliability of the information provided. Users use the service at their own risk.
+        </li>
+
+        <li>
+            <strong>User Responsibility:</strong> Users are responsible for making their own informed decisions based on the predictions provided. Price The Car is not liable for any decisions or actions taken by users based on the predictions.
+        </li>
+
+        <li>
+            <strong>Availability of Service:</strong> Price The Car may update, modify, or discontinue the service at any time without notice. We do not guarantee continuous, uninterrupted, or secure access to the service.
+        </li>
+
+        <li>
+            <strong>Privacy:</strong> User data is handled in accordance with our Privacy Policy. By using the service, users agree to the terms outlined in the Privacy Policy.
+        </li>
+
+        <li>
+            <strong>Modification of Terms:</strong> Price The Car reserves the right to modify or update these terms and conditions at any time. Users are encouraged to review the terms periodically.
+        </li>
+
+        <li>
+            <strong>User Conduct:</strong> Users agree to use the service in compliance with all applicable laws and regulations. Any misuse of the service, including but not limited to, attempts to manipulate predictions or breach security, may result in the termination of access.
+        </li>
+
+        <li>
+            <strong>Contact Information:</strong> For questions or concerns regarding these terms and conditions, users may contact Price The Car at [contact@email.com].
+        </li>
+    </ol>
+</div>
+
+
+
+<div id="ContactUs"  class="texty">
+    <h2>Contact Us</h2>
+
+    <p>
+        Have questions or concerns? Feel free to reach out to us using the contact information below:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Email:</strong> contact@pricethecar.com
+        </li>
+
+        <li>
+            <strong>Phone:</strong> +1 (123) 456-7890
+        </li>
+
+        <li>
+            <strong>Address:</strong> 123 Car Street, Auto City, Zip Code: 56789
+        </li>
+
+        <li>
+            <strong>Customer Support:</strong> support@pricethecar.com
+        </li>
+
+        <li>
+            <strong>Business Inquiries:</strong> business@pricethecar.com
+        </li>
+
+        <li>
+            <strong>Follow us on social media:</strong>
+            <ul>
+                <li><a href="https://facebook.com/pricethecar" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/pricethecar" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/pricethecar" target="_blank">Instagram</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+
+
+<!-- Add this section at the end of your HTML file -->
+<div id="predictpriceFormContainer" class="wrapper">
+    <span class="icon-close" onclick="closePredictPriceForm()"><ion-icon name="close-outline"></ion-icon></span>
+
+    <div class="form-box predictprice">
+<!-- Your existing form code here -->
+        <form method="post" accept-charset="utf-8" name="Modelform">
+          
+            <div class="col-md-10 form-group" style="text-align: center">
+                <label><b>Select the company:</b> </label><br>
+                <select class="selectpicker form-control" id="company" name="company" required="1"
+                        onchange="load_car_models(this.id,'car_models')">
+                    {% for company in companies %}
+                    <option value="{{ company }}">{{ company }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-10 form-group" style="text-align: center">
+                <label><b>Select the model:</b> </label><br>
+                <select class="selectpicker form-control" id="car_models" name="car_models" required="1">
+                </select>
+            </div>
+
+            <div class="col-md-10 form-group" style="text-align: center">
+                <label><b>Select Year of Purchase:</b> </label><br>
+                <select class="selectpicker form-control" id="year" name="year" required="1">
+                    {% for year in years %}
+                    <option value="{{ year }}">{{ year }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-10 form-group" style="text-align: center">
+                <label><b>Select the Fuel Type:</b> </label><br>
+                <select class="selectpicker form-control" id="fuel_type" name="fuel_type" required="1">
+                    {% for fuel in fuel_types %}
+                    <option value="{{ fuel }}">{{ fuel }}</option>
+                    {% endfor %}
+                </select>
+            </div> 
+
+            <div class="col-md-10 form-group" style="text-align: center">
+                <label><b>Enter the Number of Kilometres that the car has travelled:</b> </label><br>
+                <input type="text" class="form-control" id="kms_driven" name="kms_driven"
+                       placeholder="Enter the kilometres driven ">
+            </div>
+
+            <div class="col-md-10 form-group" style="text-align: center">
+                <button  class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
+            </div>
+
+        </form>
+        <br>
+        <div class="row">
+            <div class="col-12" style="text-align: center">
+                <h4><span id="prediction"></span></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add this script at the end of your script section -->
+<script>
+    function openPredictPrice() {
+        // Hide other forms or elements if needed
+
+        // Show the "Predict the price of the car" form
+        var predictPriceFormContainer = document.getElementById('predictpriceFormContainer');
+        predictPriceFormContainer.classList.add('active-popup');
+    }
+
+    function closePredictPriceForm() {
+        // Close the "Predict the price of the car" form
+        var predictPriceFormContainer = document.getElementById('predictpriceFormContainer');
+        predictPriceFormContainer.classList.remove('active-popup');
+    }
+
+    // Other functions and scripts...
+</script>
+
+
+
+
+<script>
+
+    function load_car_models(company_id,car_model_id)
+    {
+        var company=document.getElementById(company_id);
+        var car_model= document.getElementById(car_model_id);
+        console.log(company.value);
+        car_model.value="";
+        car_model.innerHTML="";
+        {% for company in companies %}
+            if( company.value == "{{ company }}")
+            {
+                {% for model in car_models %}
+                    {% if company in model %}
+
+                        var newOption= document.createElement("option");
+                        newOption.value="{{ model }}";
+                        newOption.innerHTML="{{ model }}";
+                        car_model.options.add(newOption);
+                    {% endif %}
+                {% endfor %}
+            }
+        {% endfor %}
+    }
+
+    function form_handler(event) {
+        event.preventDefault(); // Don't submit the form normally
+    }
+    function send_data()
+    {
+        document.querySelector('form').addEventListener("submit",form_handler);
+
+        var fd=new FormData(document.querySelector('form'));
+
+        var xhr= new XMLHttpRequest({mozSystem: true});
+
+        xhr.open('POST','/predict',true);
+        document.getElementById('prediction').innerHTML="Wait! Predicting Price.....";
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == XMLHttpRequest.DONE){
+                document.getElementById('prediction').innerHTML="Prediction: ₹"+xhr.responseText;
+
+            }
+        };
+
+        xhr.onload= function(){};
+
+        xhr.send(fd);
+    }
+</script>
+
+
+<script src="static/Script/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
