@@ -25,7 +25,7 @@ body {
 .card {
     border: 1px solid #ddd; /* Add a subtle border to cards */
     border-radius: 10px; /* Round the corners of cards */
-    box-shadow: 0 4px 8px rgba(241, 18, 18, 0.1); /* Add a slight box shadow for elevation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight box shadow for elevation */
 }
 
 .card-header {
